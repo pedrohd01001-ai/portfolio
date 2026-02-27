@@ -16,22 +16,22 @@
         .container {
             max-width: 900px;
             margin: auto;
-            padding: 50px 20px;
+            padding: 40px 20px;
         }
 
         header {
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
         }
 
         header h1 {
             color: #38bdf8;
             margin-bottom: 10px;
-            font-size: 36px;
+            font-size: 32px;
         }
 
         header h2 {
-            color: #cbd5e1;
+            color: #94a3b8;
             font-weight: normal;
             font-size: 18px;
         }
@@ -40,8 +40,8 @@
             background-color: #1e293b;
             padding: 25px 30px;
             border-radius: 14px;
-            margin-bottom: 40px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
             transition: 0.3s;
             display: flex;
             align-items: flex-start;
@@ -50,12 +50,12 @@
 
         .card:hover {
             background-color: #334155;
-            transform: translateY(-3px);
+            transform: translateY(-5px);
         }
 
         .card img {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
         }
 
         .card h3 {
@@ -72,20 +72,26 @@
             color: #cbd5e1;
         }
 
-        .card ul {
-            list-style: none;
-            padding: 0;
+        /* ☁️ TAGS EM FORMATO DE NUVENS */
+        .tags {
             margin-top: 10px;
         }
 
-        .card ul li {
-            background-color: #0f172a;
+        .tag {
             display: inline-block;
-            padding: 6px 12px;
-            border-radius: 6px;
-            margin: 5px 5px 0 0;
+            background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+            color: #0f172a;
+            padding: 8px 14px;
+            border-radius: 999px;
+            margin: 6px 6px 0 0;
             font-size: 14px;
-            border: 1px solid #38bdf8;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .tag:hover {
+            transform: scale(1.08);
+            box-shadow: 0 4px 12px rgba(56,189,248,0.4);
         }
 
         a {
@@ -107,7 +113,6 @@
             margin-top: 10px;
             font-weight: bold;
             transition: 0.3s;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3;
         }
 
         .btn:hover {
@@ -118,14 +123,14 @@
 
         .profile {
             text-align: center;
-            margin-top: 70px;
+            margin-top: 60px;
         }
 
         .profile img {
             width: 160px;
             height: 160px;
             border-radius: 50%;
-            border: 2px solid #38bdf8;
+            border: 3px solid #38bdf8;
             transition: 0.3s;
         }
 
@@ -148,10 +153,8 @@
             text-align: center;
             margin-top: 60px;
             color: #64748b;
-            font-size: 13px;
-            opacity: 0.8;
+            font-size: 14px;
         }
-
     </style>
 </head>
 <body>
@@ -167,31 +170,32 @@
             <img src="https://img.icons8.com/ios-filled/50/38bdf8/user.png" alt="Sobre mim">
             <div>
                 <h3>Sobre mim</h3>
+
                 <p>
                     Desenvolvedor em formação com foco em Desenvolvimento Web e Engenharia de Software.
                 </p>
+
                 <p>
                     Comprometido com aprendizado contínuo e construção de projetos práticos,
-                    aplicando lógica, boas práticas e organização de código.
+                    aplicando conceitos de lógica, boas práticas e organização de código.
                 </p>
-            </div>
-        </div>
 
-        <!-- Tecnologias em Estudo -->
-        <div class="card">
-            <img src="https://img.icons8.com/ios-filled/50/38bdf8/source-code.png" alt="Tecnologias">
-            <div>
-                <h3>Tecnologias em Estudo</h3>
-                <p>Atualmente estudando e praticando:</p>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>Banco de Dados (SQL)</li>
-                    <li>Flask</li>
-                    <li>Django</li>
-                </ul>
+                <h4>Atualmente estudando:</h4>
+
+                <div class="tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Banco de Dados (SQL)</span>
+                    <span class="tag">Flask</span>
+                    <span class="tag">Django</span>
+                </div>
+
+                <p>
+                    Buscando oportunidades para desenvolver experiência prática,
+                    contribuir com projetos reais e crescer como desenvolvedor.
+                </p>
             </div>
         </div>
 
@@ -200,10 +204,21 @@
             <img src="https://img.icons8.com/ios-filled/50/38bdf8/code.png" alt="Projetos">
             <div>
                 <h3>Projetos em Desenvolvimento</h3>
+
                 <p>
-                    Desenvolvendo projetos práticos para consolidar conhecimentos
+                    Atualmente desenvolvendo projetos práticos para consolidar conhecimentos
                     em desenvolvimento web e back-end com Python.
                 </p>
+
+                <div class="tags">
+                    <span class="tag">Landing Pages</span>
+                    <span class="tag">Sites Responsivos</span>
+                    <span class="tag">To-Do List</span>
+                    <span class="tag">CRUD</span>
+                    <span class="tag">APIs</span>
+                    <span class="tag">Automação</span>
+                </div>
+
                 <p>
                     Em breve, este portfólio contará com aplicações reais demonstrando
                     minhas habilidades técnicas e evolução como desenvolvedor.
@@ -221,7 +236,7 @@
             </div>
         </div>
 
-        <!-- Foto -->
+        <!-- Foto e mensagem -->
         <div class="profile">
             <img src="https://avatars.githubusercontent.com/u/263078954?s=400&v=4" alt="Pedro Henrique">
             <h3>Pedro Henrique</h3>
